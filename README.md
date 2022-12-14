@@ -44,7 +44,7 @@ STEP 9-> Stop the container using "docker stop <container_name>
 STEP 10->Run docker compose in detached mode using command "docker-compose up -d"
 
 STEP 11-> Now we can access the CURL command->
-curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address>,"amount":<transfer amount>}'http://localhost:8090/eth
+curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address>,"amount":<transfer_amount>}'http://localhost:8090/eth
 the above command will transfer the eth to the receiver address which is mentioned above.
 
 To transfer token enter the following command->
