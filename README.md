@@ -41,6 +41,6 @@ curl --header "Content-Type: application/json" --request POST --data'{"address":
 the above command will transfer the eth to the receiver address which is mentioned above.
 
 To transfer token enter the following command->
-curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address}'http://localhost:8090/token
+curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address>}'http://localhost:8090/token
 
 
