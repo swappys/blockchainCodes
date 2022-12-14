@@ -15,10 +15,14 @@ STEP 4->
 
 For the code to run properly, we need to add an .env file in the same directory, hence create a .env file which will contain 
 1.INFURA_URL- For this you will have to create an Infura account and in that copy the GORLI url from ethereum section and assign it to INFURA_URL variable.
+
 2.CONTRACT_ADDRESS- For this, go to the etherscan and fetch the address of contract that was created and assign it to CONTRACT_ADDRESS variable.
+
 3.OWNER_ADDRESS- In this enter the address which is displayed in account details section in metamask.
+
 4.SUPER_SECRET_PRIVATE_KEY- To get this key, go to settings, account details and click on export private key. It will prompt you to enter the password of metamask. 
 Enter the same and assign it to this variable.
+
 5.SEED_PHRASE- This is the secret phase which will be visible on security & privacy section in metamask setting. Click on reveal secret recovery phase to access the same.
 Assign it to this variable.
 
@@ -37,7 +41,7 @@ STEP 9-> Stop the container using "docker stop <container_name>
 STEP 10->Run docker compose in detached mode using command "docker-compose up -d"
 
 STEP 11-> Now we can access the CURL command->
-curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address>,"amount":<amount to transfer>}'http://localhost:8090/eth
+curl --header "Content-Type: application/json" --request POST --data'{"address":<receiver_address>,"amount":<transfer amount>}'http://localhost:8090/eth
 the above command will transfer the eth to the receiver address which is mentioned above.
 
 To transfer token enter the following command->
