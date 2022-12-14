@@ -14,6 +14,7 @@ After the process of unzipping, import the above project into Visual Studio Code
 STEP 4->
 
 For the code to run properly, we need to add an .env file in the same directory, hence create a .env file which will contain 
+
 1.INFURA_URL- For this you will have to create an Infura account and in that copy the GORLI url from ethereum section and assign it to INFURA_URL variable.
 
 2.CONTRACT_ADDRESS- For this, go to the etherscan and fetch the address of contract that was created and assign it to CONTRACT_ADDRESS variable.
